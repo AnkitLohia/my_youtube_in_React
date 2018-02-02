@@ -9,11 +9,10 @@ class SearchBar extends Component {
   }
   render() {        // render function required for every class
     return (
-    <div>
+    <div className="search-bar">
       <input 
       value = {this.state.searchKey}
       onChange = {(event) => {this.setState({searchKey : event.target.value})}} />
-      Value of the input: {this.state.searchKey}
     </div>
   );
   }
